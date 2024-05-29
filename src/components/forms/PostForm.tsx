@@ -15,7 +15,7 @@ import { Textarea } from "../ui/textarea";
 import FileUploader from "../shared/FileUploader";
 import { PostValidation } from "@/lib/validation";
 import { useUserContext } from "@/context/AuthContext";
-import { toast, useToast } from "../ui/use-toast";
+import { useToast } from "../ui/use-toast";
 import {
   useCreatePost,
   useUpdatePost,

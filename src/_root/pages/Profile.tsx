@@ -1,6 +1,5 @@
-import React from "react";
 import { useUserContext } from "@/context/AuthContext";
-import { useGetCurrentUser, useGetPostById, useGetUserById } from "@/lib/react-query/queriesAndMutations";
+import { useGetUserById } from "@/lib/react-query/queriesAndMutations";
 import {
   Route,
   Routes,
@@ -8,9 +7,7 @@ import {
   Outlet,
   useParams,
   useLocation,
-} from "react-router-dom";import PostStats from "@/components/shared/PostStats";
-import { Models } from "appwrite";
-import { multiFormatDateString } from "@/lib/utils";
+} from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import GridPostList from "@/components/shared/GridPostList";
 import LikedPosts from "./LikedPosts";

@@ -1,5 +1,5 @@
 import { convertFileToUrl } from "@/lib/utils";
-import React, { useCallback, useState } from "react";
+import { useCallback, useState } from "react";
 import { FileWithPath, useDropzone } from "react-dropzone";
 
 type ProfileUploaderProps = {

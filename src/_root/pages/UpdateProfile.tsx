@@ -37,6 +37,7 @@ const UpdateProfile = () => {
     });
 
     const { data: currentUser } = useGetUserById(id || "");
+    // @ts-ignore
     const { mutateAsync: updateUser, isLoading: isLoadingUpdate } = useUpdateUser();
     if(!currentUser) return (
       <div className="flex-center w-full h-full">
